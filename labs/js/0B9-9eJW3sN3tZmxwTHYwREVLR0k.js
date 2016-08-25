@@ -96,7 +96,7 @@ jQuery(document).ready(function($){
 	$(".main_menu .show-1").click(function(){
 		$(".bg-image").fadeOut('slow', function(){
 			$(this).css({
-				'background-image' : 'url(https://googledrive.com/host/0B9-9eJW3sN3tM0ZlV09vYUN2Z3M)',
+				'background-image' : 'url(../images/0B9-9eJW3sN3tM0ZlV09vYUN2Z3M.jpg)',
 			}).fadeIn('slow');
 		});
 		return false;
@@ -105,7 +105,7 @@ jQuery(document).ready(function($){
 	$(".main_menu .show-2").click(function(){
 		$(".bg-image").fadeOut('slow', function(){
 			$(this).css({
-				'background-image' : 'url(https://googledrive.com/host/0B9-9eJW3sN3tM0ZlV09vYUN2Z3M)',
+				'background-image' : 'url(../images/0B9-9eJW3sN3tM0ZlV09vYUN2Z3M.jpg)',
 			}).fadeIn('slow');
 		});
 		return false;
@@ -114,7 +114,7 @@ jQuery(document).ready(function($){
 	$(".main_menu .show-3").click(function(){
 		$(".bg-image").fadeOut('slow', function(){
 			$(this).css({
-				'background-image' : 'url(https://googledrive.com/host/0B9-9eJW3sN3tM0ZlV09vYUN2Z3M)',
+				'background-image' : 'url(../images/0B9-9eJW3sN3tM0ZlV09vYUN2Z3M.jpg)',
 			}).fadeIn('slow');
 		});
 		return false;
@@ -123,7 +123,7 @@ jQuery(document).ready(function($){
 	$(".main_menu .show-4").click(function(){
 		$(".bg-image").fadeOut('slow', function(){
 			$(this).css({
-				'background-image' : 'url(https://googledrive.com/host/0B9-9eJW3sN3tM0ZlV09vYUN2Z3M)',
+				'background-image' : 'url(../images/0B9-9eJW3sN3tM0ZlV09vYUN2Z3M.jpg)',
 			}).fadeIn('slow');
 		});
 		return false;
@@ -133,7 +133,7 @@ jQuery(document).ready(function($){
 		loadScript();
 		$(".bg-image").fadeOut('slow', function(){
 			$(this).css({
-				'background-image' : 'url(https://googledrive.com/host/0B9-9eJW3sN3tM0ZlV09vYUN2Z3M)',
+				'background-image' : 'url(../images/0B9-9eJW3sN3tM0ZlV09vYUN2Z3M.jpg)',
 			}).fadeIn('slow');
 		});
 		return false;
