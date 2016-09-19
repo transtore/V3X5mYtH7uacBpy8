@@ -2,29 +2,14 @@
 //PRELOADER
 //========================
 $(window).load(function() { // makes sure the whole site is loaded
+	// hide .navbar first
+    	$(".navbar").hide();
+
 	$('#status').fadeOut(); // will first fade out the loading animation
 	$('#preloader').delay(340).fadeOut('slow');
     // will fade out the white DIV that covers the website.
 	$('body').delay(340).css({'overflow':'hidden','white-space':'nowrap'}); // hidden is the solution for white space after footer
 })
-//========================
-//CUSTOM SCROLLBAR
-//========================
-$("body").niceScroll({
-    mousescrollstep: 50,
-    autohidemode: "leave",
-    cursorcolor: "#ea9312",
-    cursorwidth: "5px",
-    cursorborderradius: "10px",
-    cursorborder: "none",
-    preservenativescrolling: true,
-    disableoutline: true,
-    enablemousewheel: true,
-    smoothscroll: true,
-    nativeparentscrolling: true,
-    preventmultitouchscrolling: true
-});
-
 
 //========================
 //SMOOTHSCROLL
@@ -35,7 +20,7 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $('html,body').animate({
+        $('body').animate({
           scrollTop: target.offset().top
         }, 1000);
         return false;
@@ -43,7 +28,6 @@ $(function() {
     }
   });
 });
-
 
 //========================
 //NAVBAR
@@ -73,9 +57,29 @@ $(document).ready(function(){
         });
     });
 });
+
+
 //========================
 //icon hover effect
 //========================
 $('#services img').hover(
        function(){ $(this).addClass('animated pulse') },
        function(){ $(this).removeClass('animated pulse') })
+
+//========================
+//CUSTOM SCROLLBAR
+//========================
+$("body").niceScroll({
+    mousescrollstep: 70,
+    autohidemode: "leave",
+    cursorcolor: "#ea9312",
+    cursorwidth: "5px",
+    cursorborderradius: "10px",
+    cursorborder: "none",
+    preservenativescrolling: true,
+    disableoutline: true,
+    enablemousewheel: true,
+    smoothscroll: true,
+    nativeparentscrolling: true,
+    preventmultitouchscrolling: true
+});
