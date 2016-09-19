@@ -3,19 +3,26 @@
 //========================
 $(window).load(function() { // makes sure the whole site is loaded
 	$('#status').fadeOut(); // will first fade out the loading animation
-	$('#preloader').delay(270).fadeOut('slow');
+	$('#preloader').delay(340).fadeOut('slow');
     // will fade out the white DIV that covers the website.
-	$('body').css({'overflow':'hidden','white-space':'nowrap'}); // hidden is the solution for white space after footer
+	$('body').delay(340).css({'overflow':'hidden','white-space':'nowrap'}); // hidden is the solution for white space after footer
 })
 //========================
 //CUSTOM SCROLLBAR
 //========================
 $("html").niceScroll({
-    mousescrollstep: 70,
+    mousescrollstep: 50,
+    autohidemode: "leave",
     cursorcolor: "#ea9312",
     cursorwidth: "5px",
     cursorborderradius: "10px",
     cursorborder: "none",
+    preservenativescrolling: true,
+    disableoutline: true,
+    enablemousewheel: true,
+    smoothscroll: true,
+    nativeparentscrolling: true,
+    preventmultitouchscrolling: true
 });
 
 
