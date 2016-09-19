@@ -19,8 +19,7 @@ $("body").niceScroll({
     cursorcolor: "#ea9312",
     cursorwidth: "5px",
     cursorborderradius: "10px",
-    cursorborder: "none",
-    horizrailenabled: false
+    cursorborder: "none"
 });
 
 //========================
