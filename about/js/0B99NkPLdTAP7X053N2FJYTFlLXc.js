@@ -12,6 +12,25 @@ $(window).load(function() { // makes sure the whole site is loaded
 })
 
 //========================
+//CUSTOM SCROLLBAR
+//========================
+$("body").niceScroll({
+    mousescrollstep: 50,
+    scrollspeed: 80,
+    autohidemode: "leave",
+    cursorcolor: "#ea9312",
+    cursorwidth: "5px",
+    cursorborderradius: "10px",
+    cursorborder: "none",
+    preservenativescrolling: true,
+    disableoutline: true,
+    enablemousewheel: true,
+    nativeparentscrolling: true,
+    horizrailenabled: false,
+    preventmultitouchscrolling: true
+});
+
+//========================
 //SMOOTHSCROLL
 //========================
 $(function() {
@@ -35,7 +54,7 @@ $(function() {
 $(document).ready(function(){
 
     // hide .navbar first
-    $(".navbar").hide();
+    //$(".navbar").hide();
 
     // fade in .navbar
     $(function () {
@@ -66,20 +85,3 @@ $('#services img').hover(
        function(){ $(this).addClass('animated pulse') },
        function(){ $(this).removeClass('animated pulse') })
 
-//========================
-//CUSTOM SCROLLBAR
-//========================
-$("body").niceScroll({
-    mousescrollstep: 70,
-    autohidemode: "leave",
-    cursorcolor: "#ea9312",
-    cursorwidth: "5px",
-    cursorborderradius: "10px",
-    cursorborder: "none",
-    preservenativescrolling: true,
-    disableoutline: true,
-    enablemousewheel: true,
-    smoothscroll: true,
-    nativeparentscrolling: true,
-    preventmultitouchscrolling: true
-});
