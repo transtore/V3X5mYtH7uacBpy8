@@ -2,25 +2,22 @@
 //PRELOADER
 //========================
 $(window).load(function() { // makes sure the whole site is loaded
-	// hide .navbar first
-    	//$(".navbar").hide();
-
 	$('#status').fadeOut(); // will first fade out the loading animation
-	$('#preloader').delay(340).fadeOut('slow');
+	$('#preloader').delay(350).fadeOut('slow');
     // will fade out the white DIV that covers the website.
-	$('body').delay(340).css({'overflow':'hidden','white-space':'nowrap'}); // hidden is the solution for white space after footer
+	$('body').delay(350).css({'overflow':'hidden'});
 })
-
 //========================
 //CUSTOM SCROLLBAR
 //========================
-$("body").niceScroll({
+$("html").niceScroll({
     mousescrollstep: 70,
     cursorcolor: "#ea9312",
     cursorwidth: "5px",
     cursorborderradius: "10px",
-    cursorborder: "none"
+    cursorborder: "none",
 });
+
 
 //========================
 //SMOOTHSCROLL
@@ -31,7 +28,7 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $('body').animate({
+        $('html,body').animate({
           scrollTop: target.offset().top
         }, 1000);
         return false;
@@ -40,13 +37,15 @@ $(function() {
   });
 });
 
+
 //========================
 //NAVBAR
 //========================
-$(document).ready(function(){
+(function ($) {
+  $(document).ready(function(){
 
     // hide .navbar first
-    //$(".navbar").hide();
+    $(".navbar").hide();
 
     // fade in .navbar
     $(function () {
@@ -67,8 +66,9 @@ $(document).ready(function(){
             }
         });
     });
-});
 
+});
+  }(jQuery));
 
 //========================
 //icon hover effect
@@ -76,4 +76,3 @@ $(document).ready(function(){
 $('#services img').hover(
        function(){ $(this).addClass('animated pulse') },
        function(){ $(this).removeClass('animated pulse') })
-
