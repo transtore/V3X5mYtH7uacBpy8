@@ -17,17 +17,12 @@ $(window).load(function() { // makes sure the whole site is loaded
 $("body").niceScroll({
     mousescrollstep: 50,
     scrollspeed: 80,
-    autohidemode: "leave",
     cursorcolor: "#ea9312",
     cursorwidth: "5px",
     cursorborderradius: "10px",
     cursorborder: "none",
-    preservenativescrolling: true,
     disableoutline: true,
-    enablemousewheel: true,
-    nativeparentscrolling: true,
-    horizrailenabled: false,
-    preventmultitouchscrolling: true
+    horizrailenabled: false
 });
 
 //========================
