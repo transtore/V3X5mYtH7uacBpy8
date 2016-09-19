@@ -3,7 +3,7 @@
 //========================
 $(window).load(function() { // makes sure the whole site is loaded
 	// hide .navbar first
-    	$(".navbar").hide();
+    	//$(".navbar").hide();
 
 	$('#status').fadeOut(); // will first fade out the loading animation
 	$('#preloader').delay(340).fadeOut('slow');
