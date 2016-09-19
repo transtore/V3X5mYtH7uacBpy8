@@ -10,7 +10,7 @@ $(window).load(function() { // makes sure the whole site is loaded
 //========================
 //CUSTOM SCROLLBAR
 //========================
-$("html").niceScroll({
+$("body").niceScroll({
     mousescrollstep: 50,
     autohidemode: "leave",
     cursorcolor: "#ea9312",
